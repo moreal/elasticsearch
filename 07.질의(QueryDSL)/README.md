@@ -1,8 +1,8 @@
-#7. 질의(QueryDSL)
+# 7. 질의(QueryDSL)
 
-##7.1 쿼리
+## 7.1 쿼리
 
-###7.1.1 텀, 텀즈 쿼리
+### 7.1.1 텀, 텀즈 쿼리
 
 예제 7.1 title 필드 값이 prince인 도큐먼트를 텀 쿼리로 검색
 ```
@@ -133,7 +133,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 ```
 
 
-###7.1.3 불 쿼리
+### 7.1.3 불 쿼리
 
 예제 7.10 불 쿼리를 이용한 다중 조건 검색
 ```
@@ -157,7 +157,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 ```
 
 
-###7.1.4 문자열 쿼리
+### 7.1.4 문자열 쿼리
 
 예제 7.11 문자열 쿼리로 title 필드에서 prince 검색
 ```
@@ -186,7 +186,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-###7.1.5 접두어 쿼리
+### 7.1.5 접두어 쿼리
 
 예제 7.13 접두어 쿼리로 질의어 prin 검색
 ```
@@ -200,7 +200,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-###7.1.6 범위 쿼리
+### 7.1.6 범위 쿼리
 
 예제 7.14 범위 쿼리로 pages 필드가 50~149인 값 검색
 ```
@@ -230,7 +230,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-###7.1.7 전체 매치 쿼리
+### 7.1.7 전체 매치 쿼리
 
 예제 7.16 전체 매치 쿼리
 ```
@@ -243,7 +243,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 ```
 
 
-###7.1.8 퍼지 쿼리
+### 7.1.8 퍼지 쿼리
 
 예제 7.17 퍼지 쿼리를 이용한 질의어 tree 검색
 ```
@@ -273,9 +273,9 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-##7.2 필터
+## 7.2 필터
 
-###7.2.1 텀, 텀즈 필터
+### 7.2.1 텀, 텀즈 필터
 
 예제 7.19 텀 필터를 이용해서 title 필드가 prince인 값 검색
 ```
@@ -316,7 +316,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-###7.2.2 범위 필터
+### 7.2.2 범위 필터
 
 예제 7.22 범위 필터로 pages 필드가 50~149인 값 검색
 ```
@@ -330,7 +330,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-###7.2.3 and, or, not 필터
+### 7.2.3 and, or, not 필터
 
 예제 7.23 not 필터로 pages 필드가 50~149가 아닌 도큐먼트 검색
 ```
@@ -367,7 +367,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 ```
 
 
-###7.2.4 불 필터
+### 7.2.4 불 필터
 
 예제 7.25 불 필터를 이용한 다중 조건 검색
 ```
@@ -390,7 +390,7 @@ curl 'localhost:9200/books/_search?pretty' -d '
 }'
 ```
 
-###7.2.5 위치 필터
+### 7.2.5 위치 필터
 
 예제 7.26 geo_bounding_box 필터로 사각형 영역의 값을 검색
 ```
